@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="utf-8">
-  <title>Lightbox Example</title>
-  <link rel="stylesheet" href="css/lightbox.min.css">
-</head>
-<body>
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Colorbox Examples</title>
+    <link rel="stylesheet" type="text/css" href="HideSeek-master/demo/stylesheets/styles.css">
+    <link rel="stylesheet" href="colorbox/theme-1/colorbox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
 
-  <section>
-    <h3>Two Individual Images</h3>
-    <div>
-      
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-1.jpg" data-lightbox="example-1"><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-1.jpg" alt="image-1" /></a>
-      
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-2.jpg" data-lightbox="example-2" data-title="Optional caption."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-2.jpg" alt="image-1"/></a>
 
+    <label for="search">Lorem ipsem.</label>
+    <input id="search" name="search" placeholder="Start typing here" type="text" data-list=".default_list" autocomplete="off">
+
+    <h2>Elastic-Fade Transition</h2>
+    <div class="container default_list">
+
+      <a class="group1" href="photos/01.jpg" title="Hay" caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img class="example-image" src="photos/thumbnails/01.jpg" alt=""/></a>
+
+        <a class="group1" href="photos/02.jpg" data-lightbox="Lake" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img class="example-image" src="photos/thumbnails/02.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/03.jpg" data-lightbox="Canyon" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img class="example-image" src="photos/thumbnails/03.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/04.jpg" data-lightbox="Iceburg" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img class="example-image" src="photos/thumbnails/04.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/05.jpg" data-lightbox="Desert" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img class="example-image" src="photos/thumbnails/05.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/06.jpg" data-lightbox="Fall" data-title="Fall is coming, I love when the leaves on the trees start to change color."><img class="example-image" src="photos/thumbnails/06.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/07.jpg" data-lightbox="Plantation" data-title="I drove past this plantation yesterday, everything is so green!"><img class="example-image" src="photos/thumbnails/07.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/08.jpg" data-lightbox="Dunes" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img class="example-image" src="photos/thumbnails/08.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/09.jpg" data-lightbox="Counrtyside Lanes" data-title="We enjoyed a quiet stroll down this countryside lane."><img class="example-image" src="photos/thumbnails/09.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/10.jpg" data-lightbox="Sunset" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img class="example-image" src="photos/thumbnails/10.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/11.jpg" data-lightbox="Cave" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img class="example-image" src="photos/thumbnails/11.jpg" alt="" /></a>
+
+        <a class="group1" href="photos/12.jpg" data-lightbox="Bluebells" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img class="example-image" src="photos/thumbnails/12.jpg" alt="" /></a>
+
+    
     </div>
+    <!--jQuery-->
+    <script src="js/jquery.min.js"></script>
 
-    <hr />
+    <!--ColorBox-->
+    <script src="colorbox/jquery.colorbox.js"></script>
+    <script src="js/customize-colorbox.js"></script>
 
-    <h3>A Four Image Set</h3>
-
-    <div>
-
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-
-      <a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>
-
-    </div>
-
-  </section>
-
-  <section>
-    <p>
-      For more information, visit <a href="http://lokeshdhakar.com/projects/lightbox2/">http://lokeshdhakar.com/projects/lightbox2/</a>
-    </p>
-  </section>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/lightbox.min.js"></script>
-
-</body>
+    <!--Search Filter-->
+    <script src="js/search-filter.js"></script>
+  </body>
 </html>
