@@ -6,7 +6,7 @@
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #3d3d3d;
+  color: white;
   background: black;
   margin:0%;
 }
@@ -21,10 +21,131 @@ a, a:focus{
   outline:none;
   color: #fff;
 }
-img {
-	margin: 2.5%;
+
+/*Content and layout*/
+.search-container{
+	margin:5% 25%;
 }
-/*HideSeek styles*/
-INPUT[type="text"] {
-  width: initial;
+
+.search-container label{
+	display:block;
+	margin-bottom:1%;
+}
+
+#search:placeholder-shown{
+	text-align:center;
+}
+
+.container, footer{
+	width: 80%;
+  margin: auto;
+  margin-bottom:5%;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+  background:#220a37;
+  border: 5px solid #220a37;
+  border-radius:15px;
+  box-shadow: inset 0 0 20px 3px #000;
+  text-shadow: 0px 10px 10px #000;
+}
+
+h2, p{
+	color:white;
+}
+
+img {
+	margin: 5%;
+	border:3px solid white;
+	border-radius:10px;
+	box-shadow: 0px 5px 20px 5px #000;
+}
+
+input{
+	width:75%;
+}
+
+/*Color box custom styles*/
+
+.cboxPhoto{
+  border:3px solid white;
+  border-radius:10px;
+  box-shadow: 0px 5px 20px 5px #000;
+  max-width: 650px;
+  max-height: 400px;
+}
+
+#cboxOverlay{
+  background:url(../colorbox/theme-3/images/overlay.png) repeat 0 0;
+  opacity: 0.9;
+  filter: alpha(opacity = 90);
+}
+
+#cboxContent{
+  margin-bottom:30px;
+  margin-top:13px;
+  border: 5px solid #000;
+  box-shadow: inset 0 0 20px 3px #000;
+  background: #220a37;
+  border-radius:15px;
+}
+
+#cboxLoadedContent{
+  border-radius: 15px;
+  border:none;
+  background:none;
+}
+
+#cboxTitle{
+  width: 100%;
+  font-size:13pt;
+  bottom: 30px;
+  top:initial;
+}
+
+#cboxCurrent{
+  width: 100%;
+  top:50px;
+}
+
+#cboxPrevious{
+  left:0px;
+}
+
+#cboxNext{
+  right:0px;
+}
+
+#cboxClose{
+  top:0px;
+}
+
+#cboxSlideshow{
+  width: 100%;
+  text-align: center;
+  right: 0px;
+}
+
+@media screen and (min-width: 720px) {
+
+  img {
+    margin: 2%;
+  }
+
+  #cboxTitle{
+    bottom:35px;
+  }
+
+  #cboxTitle{
+  bottom: 0px;
+  top:initial;
+  }
+
+  #cboxCurrent{
+    top:15px;
+  }
+
+  .cboxPhoto{
+    margin: 35px auto !important;
+  }
+
 }
