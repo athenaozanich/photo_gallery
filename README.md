@@ -1,7 +1,7 @@
 # Information regarding this project repository
 
 ## Goals
-  The goal of this project is to display a solid understanding of how utilize javascript, HTML5 and CSS3 to implement a video player with video files that include format fallbacks for compatibility purposes. Additionally create a method for users to click the text transcript to jump to the appropriate time of the video. This project provided only a desktop mockup, leaving the design and development of the layout for screen sizes relevant to mobile and tablet devices on the student.
+  The goal of this project is to display a solid understanding of how utilize javascript, HTML5 and CSS3 to a lightbox plugin for displaying images in a photo gallery. Additionally add the ability to filter the images via a search filter for filtering out only images matching the search string. This project provided only a desktop mockup, leaving the design and development of the layout for screen sizes relevant to mobile and tablet devices on the student.
 
 ## Languages
   1. HTML5
